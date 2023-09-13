@@ -6,10 +6,10 @@ import pandas as pd
 df=pd.read_csv(r"C:\Users\Admin\Desktop\Data Analyst  Project\Python\Filtering and Ordering Column and Rows in Pandas\world_population.csv")
 df[df['Rank']<=10]
 
-specific_countries=['Bangladesh','Brazil']
+specific_countries=['Bangladesh', 'Brazil']
 df[df['Country'].isin(specific_countries)]
 
-#we can search for specific string, number,value,data
+#we can search for specific strings, numbers,value, and data
 df[df['Country'].str.contains('United')]
 
 df2=df.set_index('Country')
